@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form  name="formcontactos" id="form_contactos"  onsubmit="validarInputs(); return false" >
+                <h1>Formulario</h1>
+            <div>
+                <label class="textlabel">Nombre</label>
+                <input type="text"  id="nombre" class="form_input" placeholder="Juan...">
+                <div id="error_1" class="error"></div>
+            </div>
+            <div >
+                <label class="textlabel">Apellido</label>
+                <input type="text" id="apellido" class="form_input" placeholder="Perez...">
+                <div id="error_2" class="error"></div>                
+            </div>
+            <div >
+                <label class="textlabel">Telefono</label>
+                <input type="tel" id="telefono" class="form_input" placeholder="Ej: 1135984522">
+                <div id="error_3" class="error"></div>
+            </div>
+            <div>
+                <label class="textlabel">Email</label>
+                <input type="text" id="email" class="form_input" placeholder="ejemplo@ejemplo.com">
+                <div id="error_4" class="error"></div>
+            </div>
+            <div >
+                <label class="textlabel">Tipo de contacto</label>
+                <div class="select1">
+                <select id="select">
+                    <option value="" selected disabled >Elegir una opcion</option>
+                    <option value="Soporte">Soporte</option>
+                    <option value="Ventas">Ventas</option>
+                    </select>                
+                </div>
+                <div id="error_opt" class="error"></div>
+             </div>
+
+            <div >
+                <label class="textlabel">Asunto</label>
+                <input type="text" id="asunto" class="form_input" placeholder="Asunto...">
+                <div id="error_5" class="error"></div>
+            </div>
+
+            <div>
+                <label class="textlabel">Descripcion</label>
+                <input type="text" id="descripcion" class="form_input" placeholder="Descripcion...">
+                <div id="error_6" class="error"></div>
+            </div>
+                
+                    <button type="submit" class="btn">Enviar</button>
+                <h2 id="exito"></h2>
+            </form>
+        </div>
+    </div>
+    <script src="./validar.js"></script>
+</body>
+</html>
