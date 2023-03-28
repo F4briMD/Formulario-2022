@@ -1,2 +1,2 @@
 ## Formulario-2022
-Formulario básico HTML JS
+Este formulario valida los datos del usurio y lo sube a una base de datos en Mysql server en local.
